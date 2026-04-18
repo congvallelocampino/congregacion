@@ -41,7 +41,6 @@
       padding-bottom: 90px;
     }
 
-    /* HEADER */
     .header {
       background: var(--navy);
       padding: 20px 20px 24px;
@@ -73,7 +72,6 @@
       margin-top: 4px;
     }
 
-    /* NAV TABS */
     .nav-tabs {
       background: var(--white);
       border-bottom: 1px solid var(--border);
@@ -109,19 +107,13 @@
       white-space: nowrap;
     }
     .tab-btn svg { width: 18px; height: 18px; stroke: currentColor; }
-    .tab-btn.active {
-      color: var(--navy);
-      border-bottom-color: var(--navy);
-    }
+    .tab-btn.active { color: var(--navy); border-bottom-color: var(--navy); }
     .tab-btn:hover:not(.active) { color: var(--navy-mid); background: var(--navy-pale); }
 
-    /* MAIN */
     main { max-width: 600px; margin: 0 auto; padding: 20px 16px; }
-
     .section { display: none; }
     .section.active { display: block; }
 
-    /* ANNOUNCEMENT CARDS */
     .section-label {
       font-size: 11px;
       font-weight: 600;
@@ -150,22 +142,10 @@
       border-radius: 20px;
       margin-bottom: 8px;
     }
-    .announce-title {
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 5px;
-      line-height: 1.4;
-    }
-    .announce-body {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 8px;
-    }
+    .announce-title { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 5px; line-height: 1.4; }
+    .announce-body { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 8px; }
     .announce-date { font-size: 11px; color: #AAB8C8; }
 
-    /* DOC ROWS */
     .doc-row {
       background: var(--white);
       border: 1px solid var(--border);
@@ -187,13 +167,8 @@
     .doc-icon svg { width: 18px; height: 18px; }
     .doc-info { flex: 1; min-width: 0; }
     .doc-title {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 2px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 2px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
     .doc-meta { font-size: 11px; color: var(--text-muted); }
     .doc-actions { display: flex; gap: 6px; flex-shrink: 0; }
@@ -211,143 +186,72 @@
     .btn-view svg { width: 15px; height: 15px; stroke: var(--text-muted); }
     .btn-view:hover { background: var(--navy-pale); border-color: var(--navy-light); }
     .btn-view:hover svg { stroke: var(--navy); }
-
     .btn-dl { background: var(--navy-pale); border-color: var(--navy-light); }
     .btn-dl svg { width: 15px; height: 15px; stroke: var(--navy); }
     .btn-dl:hover { background: var(--navy-light); }
 
-    /* FORM LINK */
     .form-link {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 14px 16px;
-      text-decoration: none;
-      color: inherit;
-      transition: box-shadow 0.2s;
-      margin-bottom: 8px;
+      display: flex; align-items: center; gap: 14px;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 14px 16px;
+      text-decoration: none; color: inherit;
+      transition: box-shadow 0.2s; margin-bottom: 8px;
     }
     .form-link:hover { box-shadow: 0 4px 16px rgba(26,58,108,0.08); }
     .form-link .doc-actions { margin-left: auto; }
     .btn-open {
-      width: 34px; height: 34px;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border);
-      background: var(--bg);
+      width: 34px; height: 34px; border-radius: var(--radius-sm);
+      border: 1px solid var(--border); background: var(--bg);
       display: flex; align-items: center; justify-content: center;
     }
     .btn-open svg { width: 15px; height: 15px; stroke: var(--text-muted); }
 
-    /* EMPTY STATE */
-    .empty-state {
-      text-align: center;
-      padding: 48px 24px;
-      color: var(--text-muted);
-    }
-    .empty-state svg { width: 40px; height: 40px; stroke: var(--border); margin-bottom: 12px; }
-    .empty-state p { font-size: 14px; }
-
-    /* ADMIN SECTION */
     .admin-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px;
-      margin-bottom: 12px;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px; margin-bottom: 12px;
     }
-    .admin-card h3 {
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 6px;
-    }
-    .admin-card p {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-    .admin-step {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      margin-bottom: 14px;
-    }
+    .admin-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+    .admin-card p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+    .admin-step { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
     .admin-num {
-      width: 24px; height: 24px;
-      border-radius: 50%;
-      background: var(--navy);
-      color: var(--white);
-      font-size: 12px;
-      font-weight: 600;
+      width: 24px; height: 24px; border-radius: 50%;
+      background: var(--navy); color: var(--white);
+      font-size: 12px; font-weight: 600;
       display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-      margin-top: 1px;
+      flex-shrink: 0; margin-top: 1px;
     }
     .admin-step p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
     .admin-step strong { color: var(--text); }
 
-    /* WEEK BANNER */
     .week-banner {
       background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-      border-radius: var(--radius);
-      padding: 18px 20px;
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      border-radius: var(--radius); padding: 18px 20px; margin-bottom: 16px;
+      display: flex; align-items: center; justify-content: space-between;
     }
     .week-banner-left h2 {
-      font-family: 'Fraunces', serif;
-      font-size: 18px;
-      color: var(--white);
-      font-weight: 600;
-      margin-bottom: 3px;
+      font-family: 'Fraunces', serif; font-size: 18px;
+      color: var(--white); font-weight: 600; margin-bottom: 3px;
     }
     .week-banner-left p { font-size: 12px; color: rgba(255,255,255,0.6); }
     .week-icon {
-      width: 44px; height: 44px;
-      background: rgba(255,255,255,0.12);
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; background: rgba(255,255,255,0.12);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
     }
     .week-icon svg { width: 22px; height: 22px; stroke: rgba(255,255,255,0.8); }
 
-    /* QUICK ACCESS GRID */
     .quick-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin-bottom: 8px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px;
     }
     .quick-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 14px;
-      text-decoration: none;
-      color: inherit;
-      cursor: pointer;
-      transition: box-shadow 0.2s;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 14px;
+      text-decoration: none; color: inherit; cursor: pointer;
+      transition: box-shadow 0.2s; display: flex; flex-direction: column; gap: 8px;
     }
     .quick-card:hover { box-shadow: 0 4px 16px rgba(26,58,108,0.08); }
-    .quick-card-icon {
-      width: 32px; height: 32px;
-      border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-    }
+    .quick-card-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
     .quick-card-icon svg { width: 15px; height: 15px; }
-    .quick-card span {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text);
-      line-height: 1.3;
-    }
+    .quick-card span { font-size: 12px; font-weight: 600; color: var(--text); line-height: 1.3; }
     .quick-card small { font-size: 10px; color: var(--text-muted); }
   </style>
 </head>
@@ -492,7 +396,7 @@
           <a href="ENLACE_DRIVE_PREDICACION_PUBLICA" target="_blank" class="btn-view" title="Ver">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           </a>
-          <a href="ENLACE_DESCARGA_PREDICACION_PUBLICA" download class="btn-dl" title="Descargar">
+          <a href="ENLACE_DESCARGA_PREDICACION_PUBLICA" target="_blank" class="btn-dl" title="Descargar">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           </a>
         </div>
@@ -515,7 +419,7 @@
           <a href="https://drive.google.com/file/d/1-lgjqj1YH3V6SE0orTABmF6jBI4syvuA/view?usp=sharing" target="_blank" class="btn-view" title="Ver">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           </a>
-          <a href="https://drive.google.com/uc?export=download&id=1-lgjqj1YH3V6SE0orTABmF6jBI4syvuA" download class="btn-dl" title="Descargar">
+          <a href="https://drive.google.com/uc?export=download&id=1-lgjqj1YH3V6SE0orTABmF6jBI4syvuA" target="_blank" class="btn-dl" title="Descargar">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           </a>
         </div>
@@ -533,7 +437,7 @@
           <a href="https://drive.google.com/file/d/1ZTKlioqzP1yDdyGVg1EkjtCVegvHOLv8/view?usp=sharing" target="_blank" class="btn-view" title="Ver">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           </a>
-          <a href="https://drive.google.com/uc?export=download&id=1ZTKlioqzP1yDdyGVg1EkjtCVegvHOLv8" class="btn-dl" title="Descargar">
+          <a href="https://drive.google.com/uc?export=download&id=1ZTKlioqzP1yDdyGVg1EkjtCVegvHOLv8" target="_blank" class="btn-dl" title="Descargar">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           </a>
         </div>
@@ -551,7 +455,7 @@
           <a href="https://drive.google.com/file/d/1bXyRnXPi-Z6D2VE_pHOI7hBcEEc5ykPP/view?usp=sharing" target="_blank" class="btn-view" title="Ver">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           </a>
-          <a href="https://drive.google.com/uc?export=download&id=1bXyRnXPi-Z6D2VE_pHOI7hBcEEc5ykPP" download class="btn-dl" title="Descargar">
+          <a href="https://drive.google.com/uc?export=download&id=1bXyRnXPi-Z6D2VE_pHOI7hBcEEc5ykPP" target="_blank" class="btn-dl" title="Descargar">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           </a>
         </div>
@@ -570,6 +474,24 @@
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           </a>
           <a href="https://drive.google.com/uc?export=download&id=1Upedpz_21WFLF_zckM3JdDTYEy2kDBe4" target="_blank" class="btn-dl" title="Descargar">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-row">
+        <div class="doc-icon" style="background:var(--navy-pale);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div class="doc-info">
+          <p class="doc-title">Privilegios reuniones</p>
+          <p class="doc-meta">Abril 2026 · PDF</p>
+        </div>
+        <div class="doc-actions">
+          <a href="https://drive.google.com/file/d/18kEZQ2y6qP9Us3pGTWuxUrSJSXGlymp3/view?usp=sharing" target="_blank" class="btn-view" title="Ver">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </a>
+          <a href="https://drive.google.com/uc?export=download&id=18kEZQ2y6qP9Us3pGTWuxUrSJSXGlymp3" target="_blank" class="btn-dl" title="Descargar">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           </a>
         </div>
