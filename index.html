@@ -66,11 +66,7 @@
       border-radius: 20px;
       border: 1px solid rgba(255,255,255,0.2);
     }
-    .header p {
-      color: rgba(255,255,255,0.6);
-      font-size: 13px;
-      margin-top: 4px;
-    }
+    .header p { color: rgba(255,255,255,0.6); font-size: 13px; margin-top: 4px; }
 
     .nav-tabs {
       background: var(--white);
@@ -79,32 +75,15 @@
       top: 80px;
       z-index: 99;
     }
-    .nav-tabs-inner {
-      max-width: 600px;
-      margin: 0 auto;
-      display: flex;
-      overflow-x: auto;
-      scrollbar-width: none;
-    }
+    .nav-tabs-inner { max-width: 600px; margin: 0 auto; display: flex; overflow-x: auto; scrollbar-width: none; }
     .nav-tabs-inner::-webkit-scrollbar { display: none; }
     .tab-btn {
-      flex: 1;
-      min-width: 80px;
-      padding: 14px 8px 12px;
-      border: none;
-      background: none;
-      cursor: pointer;
+      flex: 1; min-width: 80px; padding: 14px 8px 12px;
+      border: none; background: none; cursor: pointer;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 12px;
-      font-weight: 500;
-      color: var(--text-muted);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 5px;
-      border-bottom: 2px solid transparent;
-      transition: all 0.2s;
-      white-space: nowrap;
+      font-size: 12px; font-weight: 500; color: var(--text-muted);
+      display: flex; flex-direction: column; align-items: center; gap: 5px;
+      border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap;
     }
     .tab-btn svg { width: 18px; height: 18px; stroke: currentColor; }
     .tab-btn.active { color: var(--navy); border-bottom-color: var(--navy); }
@@ -115,72 +94,39 @@
     .section.active { display: block; }
 
     .section-label {
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--text-muted);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      margin-top: 20px;
+      font-size: 11px; font-weight: 600; color: var(--text-muted);
+      letter-spacing: 0.08em; text-transform: uppercase;
+      margin-bottom: 10px; margin-top: 20px;
     }
     .section-label:first-child { margin-top: 0; }
 
     .announce-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 16px;
-      margin-bottom: 10px;
-      transition: box-shadow 0.2s;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px; margin-bottom: 10px; transition: box-shadow 0.2s;
     }
     .announce-card:hover { box-shadow: 0 4px 16px rgba(26,58,108,0.08); }
-    .announce-tag {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 600;
-      padding: 3px 10px;
-      border-radius: 20px;
-      margin-bottom: 8px;
-    }
+    .announce-tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin-bottom: 8px; }
     .announce-title { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 5px; line-height: 1.4; }
     .announce-body { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 8px; }
     .announce-date { font-size: 11px; color: #AAB8C8; }
 
     .doc-row {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 14px 16px;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      transition: box-shadow 0.2s;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 14px 16px; margin-bottom: 8px;
+      display: flex; align-items: center; gap: 14px; transition: box-shadow 0.2s;
     }
     .doc-row:hover { box-shadow: 0 4px 16px rgba(26,58,108,0.08); }
-    .doc-icon {
-      width: 40px; height: 40px;
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
+    .doc-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .doc-icon svg { width: 18px; height: 18px; }
     .doc-info { flex: 1; min-width: 0; }
-    .doc-title {
-      font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 2px;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    }
+    .doc-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .doc-meta { font-size: 11px; color: var(--text-muted); }
     .doc-actions { display: flex; gap: 6px; flex-shrink: 0; }
 
     .btn-view, .btn-dl {
-      width: 34px; height: 34px;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: center;
-      cursor: pointer;
-      text-decoration: none;
-      transition: all 0.15s;
+      width: 34px; height: 34px; border-radius: var(--radius-sm);
+      border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+      cursor: pointer; text-decoration: none; transition: all 0.15s;
     }
     .btn-view { background: var(--bg); }
     .btn-view svg { width: 15px; height: 15px; stroke: var(--text-muted); }
@@ -194,32 +140,18 @@
       display: flex; align-items: center; gap: 14px;
       background: var(--white); border: 1px solid var(--border);
       border-radius: var(--radius); padding: 14px 16px;
-      text-decoration: none; color: inherit;
-      transition: box-shadow 0.2s; margin-bottom: 8px;
+      text-decoration: none; color: inherit; transition: box-shadow 0.2s; margin-bottom: 8px;
     }
     .form-link:hover { box-shadow: 0 4px 16px rgba(26,58,108,0.08); }
     .form-link .doc-actions { margin-left: auto; }
-    .btn-open {
-      width: 34px; height: 34px; border-radius: var(--radius-sm);
-      border: 1px solid var(--border); background: var(--bg);
-      display: flex; align-items: center; justify-content: center;
-    }
+    .btn-open { width: 34px; height: 34px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg); display: flex; align-items: center; justify-content: center; }
     .btn-open svg { width: 15px; height: 15px; stroke: var(--text-muted); }
 
-    .admin-card {
-      background: var(--white); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 20px; margin-bottom: 12px;
-    }
+    .admin-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; margin-bottom: 12px; }
     .admin-card h3 { font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
     .admin-card p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
     .admin-step { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
-    .admin-num {
-      width: 24px; height: 24px; border-radius: 50%;
-      background: var(--navy); color: var(--white);
-      font-size: 12px; font-weight: 600;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; margin-top: 1px;
-    }
+    .admin-num { width: 24px; height: 24px; border-radius: 50%; background: var(--navy); color: var(--white); font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
     .admin-step p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
     .admin-step strong { color: var(--text); }
 
@@ -228,26 +160,13 @@
       border-radius: var(--radius); padding: 18px 20px; margin-bottom: 16px;
       display: flex; align-items: center; justify-content: space-between;
     }
-    .week-banner-left h2 {
-      font-family: 'Fraunces', serif; font-size: 18px;
-      color: var(--white); font-weight: 600; margin-bottom: 3px;
-    }
+    .week-banner-left h2 { font-family: 'Fraunces', serif; font-size: 18px; color: var(--white); font-weight: 600; margin-bottom: 3px; }
     .week-banner-left p { font-size: 12px; color: rgba(255,255,255,0.6); }
-    .week-icon {
-      width: 44px; height: 44px; background: rgba(255,255,255,0.12);
-      border-radius: 10px; display: flex; align-items: center; justify-content: center;
-    }
+    .week-icon { width: 44px; height: 44px; background: rgba(255,255,255,0.12); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
     .week-icon svg { width: 22px; height: 22px; stroke: rgba(255,255,255,0.8); }
 
-    .quick-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px;
-    }
-    .quick-card {
-      background: var(--white); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 14px;
-      text-decoration: none; color: inherit; cursor: pointer;
-      transition: box-shadow 0.2s; display: flex; flex-direction: column; gap: 8px;
-    }
+    .quick-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+    .quick-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; text-decoration: none; color: inherit; cursor: pointer; transition: box-shadow 0.2s; display: flex; flex-direction: column; gap: 8px; }
     .quick-card:hover { box-shadow: 0 4px 16px rgba(26,58,108,0.08); }
     .quick-card-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
     .quick-card-icon svg { width: 15px; height: 15px; }
@@ -260,10 +179,10 @@
   <header class="header">
     <div class="header-inner">
       <div class="header-top">
-        <h1>Congregación Valle Lo Campino (10926)</h1>
+        <h1>Congregación Valle Lo Campino</h1>
         <span class="header-badge">Abril 2026</span>
       </div>
-      <p id="semana-texto">Testigos de Jehová . Circuito RM-01</p>
+      <p id="semana-texto">Semana del 13 al 20 de abril</p>
     </div>
   </header>
 
@@ -401,6 +320,25 @@
           </a>
         </div>
       </div>
+
+      <div class="doc-row">
+        <div class="doc-icon" style="background:var(--amber-light);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+        </div>
+        <div class="doc-info">
+          <p class="doc-title">Territorios</p>
+          <p class="doc-meta">Abril 2026 · PDF</p>
+        </div>
+        <div class="doc-actions">
+          <a href="https://drive.google.com/file/d/1IswbSAlKMTiCYOE3erdPlEOBFo6OoxZv/view?usp=sharing" target="_blank" class="btn-view" title="Ver">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </a>
+          <a href="https://drive.google.com/uc?export=download&id=1IswbSAlKMTiCYOE3erdPlEOBFo6OoxZv" target="_blank" class="btn-dl" title="Descargar">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
     </section>
 
     <!-- DOCUMENTOS -->
@@ -488,10 +426,10 @@
           <p class="doc-meta">Abril 2026 · PDF</p>
         </div>
         <div class="doc-actions">
-          <a href="https://drive.google.com/file/d/1WvpCIDpX2MoPYu90pBwu7-J4AaffIYcG/view?usp=sharing" target="_blank" class="btn-view" title="Ver">
+          <a href="https://drive.google.com/file/d/18kEZQ2y6qP9Us3pGTWuxUrSJSXGlymp3/view?usp=sharing" target="_blank" class="btn-view" title="Ver">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           </a>
-          <a href="https://drive.google.com/uc?export=download&id=1WvpCIDpX2MoPYu90pBwu7-J4AaffIYcG" target="_blank" class="btn-dl" title="Descargar">
+          <a href="https://drive.google.com/uc?export=download&id=18kEZQ2y6qP9Us3pGTWuxUrSJSXGlymp3" target="_blank" class="btn-dl" title="Descargar">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           </a>
         </div>
